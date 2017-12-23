@@ -9,7 +9,7 @@ let FileDialog = () => {
     }
 
     return (<Dropzone onDrop={(event) => handleFileSelect(event)}>
-    <p>Drag a marc file (.mrc, .dat) file here to import.</p>
+    <p>Drag a marc file (.mrc, .dat) file here to import it.</p>
     </Dropzone>
   )
 }
