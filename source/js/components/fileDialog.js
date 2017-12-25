@@ -4,8 +4,10 @@ import Dropzone from 'react-dropzone';
 let FileDialog = () => {
 
    let handleFileSelect = (v) => {
-     console.log('Hello file contents')
-     console.log(v[0].preview) 
+    const reader = new FileReader();
+    reader.onload = () => {
+        const fileAsBinaryString = reader.result;
+    };
     }
 
     return (<Dropzone onDrop={(event) => handleFileSelect(event)}>
